@@ -1,0 +1,23 @@
+package com.flipkart.services;
+
+public class SearchService implements Search{
+
+	@Override
+	public void findItemWithLowestPrice() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void findItemWithHighestPrice() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void findItemWithLeastQuantity() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.flipkart.services;
+
+import com.flipkart.entities.Inventory;
+import com.flipkart.entities.Items;
+
+public class FilterService implements Filter{
+
+	@Override
+	public Items filterByCategoryOrBrand(Inventory inventory,String arg, boolean categoryFlag, boolean brandFlag) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Items filterByPriceRange(Inventory inventory,int from, int to) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

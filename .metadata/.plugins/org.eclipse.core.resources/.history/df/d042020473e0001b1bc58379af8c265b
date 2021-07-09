@@ -1,0 +1,6 @@
+package com.flipkart.entities;
+
+public class Inventory {
+
+	ItemGroup
+}

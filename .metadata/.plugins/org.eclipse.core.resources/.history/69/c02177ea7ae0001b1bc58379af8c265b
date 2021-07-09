@@ -1,0 +1,11 @@
+package com.flipkart.services;
+
+public interface Search {
+	
+	public void findItemWithLowestPrice();
+	
+	public void findItemWithHighestPrice();
+	
+	public void findItemWithLeastQuantity();
+
+}

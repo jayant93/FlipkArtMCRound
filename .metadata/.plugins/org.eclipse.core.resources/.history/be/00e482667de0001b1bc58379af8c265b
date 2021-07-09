@@ -1,0 +1,75 @@
+package com.flipkart.services;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.TreeMap;
+
+import com.flipkart.comparators.SortByPriceAscending;
+import com.flipkart.comparators.SortByPriceDescending;
+import com.flipkart.entities.Inventory;
+import com.flipkart.entities.Items;
+
+public class SearchService implements Search{
+
+	@Override
+	public void findItemWithLowestPrice(Inventory inventory) {
+		
+		List<Items> itemsInInventory = new ArrayList<>();
+	 
+		for(Entry<Items, Integer> map : inventory.getItems().entrySet()) {
+			itemsInInventory.add(map.getKey());
+		}
+		
+
+        Collections.sort(itemsInInventory,new SortByPriceAscending());
+        q
+		
+	}
+
+	@Override
+	public void findItemWithHighestPrice(Inventory inventory) {
+		List<Items> itemsInInventory = new ArrayList<>();
+		 
+		for(Entry<Items, Integer> map : inventory.getItems().entrySet()) {
+			itemsInInventory.add(map.getKey());
+		}
+		
+
+        Collections.sort(itemsInInventory,new SortByPriceDescending());
+        
+		
+	}
+
+	@Override
+	public void findItemWithLeastQuantity(Inventory inventory) {
+		
+        List<Entry<Items, Integer>> list =
+               new LinkedList<HashMap.Entry<Items, Integer> >((Collection<? extends Entry<Items, Integer>>) inventory.getItems()));
+ 
+        // Sort the list
+        Collections.sort(list, new Comparator<Map.Entry<String, Integer> >() {
+            public int compare(Map.Entry<String, Integer> o1,
+                               Map.Entry<String, Integer> o2)
+            {
+                return (o1.getValue()).compareTo(o2.getValue());
+            }
+        });
+         
+        // put data from sorted list to hashmap
+        HashMap<String, Integer> temp = new LinkedHashMap<String, Integer>();
+        for (Map.Entry<String, Integer> aa : list) {
+            temp.put(aa.getKey(), aa.getValue());
+        }
+	}
+
+	
+
+}

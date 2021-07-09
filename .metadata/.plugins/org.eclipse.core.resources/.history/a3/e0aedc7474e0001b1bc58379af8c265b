@@ -1,0 +1,14 @@
+package com.flipkart.entities;
+
+import java.util.NavigableMap;
+
+public class Inventory {
+
+	private Items items;
+	private int Quantity;
+	
+	public int getQuantity(Items item) {
+		 
+	}
+	
+}

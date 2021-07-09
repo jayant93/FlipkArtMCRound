@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.flipkart.entities.Itemgroup"/>
+    <fullyQualifiedTypeName name="com.flipkart.entities.ItemGroup"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.classfile.StackMapEntry"/>
+    <fullyQualifiedTypeName name="java.util.TreeMap"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.flipkart.comparators.SortByPrice"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="com.flipkart.comparators.SortByPriceDescending"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="com.flipkart.comparators.SortByValues"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.parser.Scanner"/>
+    <fullyQualifiedTypeName name="com.flipkart.entities.Items"/>
+    <fullyQualifiedTypeName name="com.flipkart.entities.Inventory"/>
+    <fullyQualifiedTypeName name="com.flipkart.services.InventoryService"/>
+    <fullyQualifiedTypeName name="com.flipkart.services.InventoryServiceImpl"/>
+    <fullyQualifiedTypeName name="java.awt.image.FilteredImageSource"/>
+    <fullyQualifiedTypeName name="com.flipkart.services.FilterService"/>
+    <fullyQualifiedTypeName name="java.util.NavigableMap"/>
+    <fullyQualifiedTypeName name="com.flipkart.services.SearchService"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+</qualifiedTypeNameHistroy>

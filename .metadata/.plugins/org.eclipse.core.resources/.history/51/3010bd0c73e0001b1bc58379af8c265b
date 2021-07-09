@@ -1,0 +1,26 @@
+package com.flipkart.entities;
+
+public class Items {
+	
+		private ItemGroup item;
+		private int itemPrice;
+		
+		
+		
+		public ItemGroup getItem() {
+			return item;
+		}
+		public void setItem(ItemGroup item) {
+			this.item = item;
+		}
+		public int getItemPrice() {
+			return itemPrice;
+		}
+		public void setItemPrice(int itemPrice) {
+			this.itemPrice = itemPrice;
+		}
+		
+		
+		
+		
+}

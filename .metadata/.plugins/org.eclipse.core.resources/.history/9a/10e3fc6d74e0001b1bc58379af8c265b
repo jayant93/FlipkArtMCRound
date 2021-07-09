@@ -1,0 +1,19 @@
+package com.flipkart.entities;
+
+import java.util.NavigableMap;
+
+public class Inventory {
+
+	private NavigableMap<String,Items> items;
+
+	public NavigableMap<String, Items> getItems() {
+		return items;
+	}
+
+	public void setItems(NavigableMap<String, Items> items) {
+		this.items = items;
+	}
+	
+	
+	
+}

@@ -1,0 +1,32 @@
+package com.flipkart.entities;
+
+
+public class Inventory {
+
+	String Id;
+	private Items items;
+	private int quantity;
+	
+	
+	public String getId() {
+		return Id;
+	}
+	public void setId(String id) {
+		Id = id;
+	}
+	public Items getItems() {
+		return items;
+	}
+	public void setItems(Items items) {
+		this.items = items;
+	}
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	
+	
+}

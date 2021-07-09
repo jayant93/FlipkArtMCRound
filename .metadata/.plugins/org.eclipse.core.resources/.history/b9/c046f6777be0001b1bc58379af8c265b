@@ -1,0 +1,38 @@
+package com.flipkart.services;
+
+import java.util.Map.Entry;
+
+import com.flipkart.entities.Inventory;
+import com.flipkart.entities.Items;
+
+public class SearchService implements Search{
+
+	@Override
+	public void findItemWithLowestPrice(Inventory inventory) {
+		
+		for(Entry<Items, Integer> map : inventory.getItems().entrySet()) {
+			if(map.getKey().getItemPrice() >= from && 
+					map.getKey().getItemPrice() <= to) {
+				System.out.println(map.getKey().getItem().getCategory()+" --> "+
+						map.getKey().getItem().getBrand()+" -->"+map.getValue());
+			}
+			
+		}
+		
+	}
+
+	@Override
+	public void findItemWithHighestPrice(Inventory inventory) {
+		
+		
+	}
+
+	@Override
+	public void findItemWithLeastQuantity(Inventory inventory) {
+		
+		
+	}
+
+	
+
+}

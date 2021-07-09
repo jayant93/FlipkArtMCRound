@@ -1,0 +1,76 @@
+package com.flipkart.main;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import com.flipkart.entities.Inventory;
+import com.flipkart.entities.ItemGroup;
+import com.flipkart.entities.Items;
+
+public class Main {
+
+/*	AddItem(Amul, Milk, 100)
+	AddItem(Amul, Curd, 50) 
+	AddItem(Nestle, Milk, 60) 
+	AddItem(Nestle, Curd, 90) */
+
+	/*
+	 * AddInventory(Amul, Milk, 10)
+AddInventory(Nestle, Milk, 5)
+AddInventory(Nestle,Curd,10) 
+AddInventory(Amul, Milk, 10)
+	 * 
+	 * 
+	 * 
+	 * */
+	
+	
+	public static void main(String[] args) {
+		
+		ItemGroup itemGroup1 = new ItemGroup("Amul","Milk");
+		itemGroup1.setId(itemGroup1.hashCode());
+		
+		//Creating Item 
+		Items item1 = new Items(itemGroup1,100);
+		
+
+		ItemGroup itemGroup2 = new ItemGroup("Amul","Curd");
+		itemGroup1.setId(itemGroup2.hashCode());
+		
+		//Creating Item 
+		Items item2 = new Items(itemGroup2,50);
+		
+		
+
+		ItemGroup itemGroup3 = new ItemGroup("Nestle","Milk");
+		itemGroup1.setId(itemGroup3.hashCode());
+		
+		//Creating Item 
+		Items item3 = new Items(itemGroup3,60);
+		
+		
+		ItemGroup itemGroup4 = new ItemGroup("Nestle","Curd");
+		itemGroup1.setId(itemGroup4.hashCode());
+		
+		//Creating Item 
+		Items item4 = new Items(itemGroup3,90);
+		
+		//adding it to inventory
+		Inventory inventory  = new Inventory();
+		
+		HashMap<Items,Integer> itemsList = new HashMap<>();
+		
+		itemsList.put(item1,10);
+		itemsList.put(item2,5);
+		itemsList.put(item3,10);
+		itemsList.put(item4,10);
+		
+		inventory.setItems(itemsList);
+		
+		inventory.showInventory();
+		
+		
+	}
+
+}
